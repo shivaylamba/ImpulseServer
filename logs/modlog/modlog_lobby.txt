@@ -1,0 +1,2 @@
+[2018-01-25T13:35:29.084Z] (lobby) GLOBALVOICE: [dragonslayern] by anrinn
+[2018-01-25T13:57:46.757Z] (lobby) TOUR CREATE:  by anrinn: gen7challengecup1v1

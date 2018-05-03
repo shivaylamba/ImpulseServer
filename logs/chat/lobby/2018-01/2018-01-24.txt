@@ -1,0 +1,13 @@
+03:38:12 NEW CHATROOM: lobby
+03:38:28 |J| Anrin N
+03:38:37 |c:|1516765117| Anrin N|.dev
+03:41:19 |L| Anrin N
+03:41:20 NEW CHATROOM: lobby
+03:41:35 |J| Anrin N
+03:42:01 NEW CHATROOM: lobby
+03:42:10 |J| Anrin N
+03:42:19 |raw|<div class="broadcast-red"><b>The server needs to restart because of a crash:</b> TypeError: WL.getFaction is not a function<br />    at Economy.readMoney.currency (&#x2f;home&#x2f;ubuntu&#x2f;workspace&#x2f;New Folder&#x2f;Impulse-PS&#x2f;wavelength-plugins&#x2f;profile.js:579:12)<br />Please restart the server.</div>
+03:42:19 |raw|<div class="broadcast-red">You will not be able to start new battles until the server restarts.</div>
+03:52:01 |userstats|total:1|guests:0| :1|+:0|%:0|@:0|*:0|☆:0|★:0|#:0|&:0|~:0
+04:02:01 |userstats|total:1|guests:0| :1|+:0|%:0|@:0|*:0|☆:0|★:0|#:0|&:0|~:0
+04:04:38 |raw|<div class="broadcast-red"><b>The server is restarting soon.</b><br />Please finish your battles quickly. No new battles can be started until the server resets in a few minutes.</div>

@@ -1,0 +1,22 @@
+13:35:06 NEW CHATROOM: lobby
+13:35:14 |J| Anrin N
+13:35:29 |c| Anrin N|/log dragonslayern was promoted to Voice by Anrin N.
+13:35:41 |N|+dragonslayern|anrinn
+13:40:41 NEW CHATROOM: lobby
+13:40:48 |J|+Dragon SlayerN~☆
+13:43:29 NEW CHATROOM: lobby
+13:43:37 |J|+Dragon SlayerN~☆
+13:48:26 NEW CHATROOM: lobby
+13:48:32 |J|+Dragon SlayerN~☆
+13:53:48 NEW CHATROOM: lobby
+13:53:55 |J|+Dragon SlayerN~☆
+13:54:06 |N| elkgddnkgd|dragonslayern
+13:54:34 NEW CHATROOM: lobby
+13:54:41 |J|+Dragon SlayerN~☆
+13:55:52 NEW CHATROOM: lobby
+13:55:58 |J|+Dragon SlayerN~☆
+13:56:03 |c|+Dragon SlayerN~☆|!profile
+13:56:03 |html|<div class="infobox"><div> <div style="display: inline-block; width: 6.5em; height: 100%; vertical-align: top"><img src="http://play.pokemonshowdown.com/sprites/trainers/2.png" height="80" width="80" align="left"></div><div style="display: inline-block">&nbsp;<font color="#000"><b>Name:</b></font> <b><font color=#C84470>Dragon SlayerN~☆</font></b>&nbsp;  <br />&nbsp;<font color="#000"><b>Group:</b> Global Voice</font>  <br />&nbsp;<font color="#000"><b>Bucks:</b> 4</font><br />&nbsp;<font color="#000"><b>EXP Level:</b> 1</font><br />&nbsp;<font color="#000"><b>Last Seen:</b> <font color = "limegreen"><strong>Currently Online</strong></font></font><br />&nbsp;<br />&nbsp;<br />&nbsp;</div><br clear="all"></div>
+13:57:17 |J| Anrin N
+13:57:46 |tournament|create|gen7challengecup1v1|Single Elimination|0
+13:57:46 (Anrin N created a tournament in gen7challengecup1v1 format.)

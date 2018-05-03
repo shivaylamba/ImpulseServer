@@ -1,0 +1,103 @@
+
+Error: bind EADDRINUSE 0.0.0.0:8080
+    at Object._errnoException (util.js:1024:11)
+    at _exceptionWithHostPort (util.js:1046:20)
+    at listenOnMasterHandle (net.js:1411:16)
+    at rr (internal/cluster/child.js:111:12)
+    at Worker.send (internal/cluster/child.js:78:7)
+    at process.onInternalMessage (internal/cluster/utils.js:42:8)
+    at emitTwo (events.js:131:20)
+    at process.emit (events.js:214:7)
+    at emit (internal/child_process.js:772:12)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+
+Additional information:
+
+
+TypeError: WL.getFaction is not a function
+    at Economy.readMoney.currency (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:579:12)
+    at Object.readMoney (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/economy.js:29:11)
+    at showProfile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:562:12)
+    at WL.regdate.date (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:526:4)
+    at IncomingMessage.res.on.on (/home/ubuntu/workspace/New Folder/Impulse-PS/WL.js:54:5)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1056:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+TypeError: Cannot read property 'level' of undefined
+    at Economy.readMoney.currency (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:579:82)
+    at Object.readMoney (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/economy.js:29:11)
+    at showProfile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:562:12)
+    at WL.regdate.date (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:526:4)
+    at Object.regdate (/home/ubuntu/workspace/New Folder/Impulse-PS/WL.js:33:36)
+    at CommandContext.profile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:518:6)
+    at CommandContext.run (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:452:28)
+    at CommandContext.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:258:19)
+    at Object.Chat.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:1158:17)
+    at User.chat (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1469:9)
+
+Additional information:
+  user = Anrin N
+  room = lobby
+  pmTarget = undefined
+  message = /profile
+
+
+ReferenceError: tsumetaCheck is not defined
+    at Economy.readMoney.currency (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:612:106)
+    at Object.readMoney (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/economy.js:29:11)
+    at showProfile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:607:12)
+    at CommandContext.profile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:496:3)
+    at CommandContext.run (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:452:28)
+    at CommandContext.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:258:19)
+    at Object.Chat.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:1158:17)
+    at User.chat (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1469:9)
+    at Function.socketReceive (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1690:12)
+    at Worker.worker.on.data (/home/ubuntu/workspace/New Folder/Impulse-PS/sockets.js:53:11)
+
+Additional information:
+  user = Anrin N
+  room = lobby
+  pmTarget = undefined
+  message = /profile
+
+
+ReferenceError: regdate is not defined
+    at Economy.readMoney.currency (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:613:69)
+    at Object.readMoney (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/economy.js:29:11)
+    at showProfile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:607:12)
+    at CommandContext.profile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:496:3)
+    at CommandContext.run (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:452:28)
+    at CommandContext.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:258:19)
+    at Object.Chat.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:1158:17)
+    at User.chat (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1469:9)
+    at Function.socketReceive (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1690:12)
+    at Worker.worker.on.data (/home/ubuntu/workspace/New Folder/Impulse-PS/sockets.js:53:11)
+
+Additional information:
+  user = Anrin N
+  room = lobby
+  pmTarget = undefined
+  message = /profile
+
+
+ReferenceError: online is not defined
+    at Economy.readMoney.currency (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:625:5)
+    at Object.readMoney (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/economy.js:29:11)
+    at showProfile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:607:12)
+    at CommandContext.profile (/home/ubuntu/workspace/New Folder/Impulse-PS/wavelength-plugins/profile.js:496:3)
+    at CommandContext.run (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:452:28)
+    at CommandContext.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:258:19)
+    at Object.Chat.parse (/home/ubuntu/workspace/New Folder/Impulse-PS/chat.js:1158:17)
+    at User.chat (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1469:9)
+    at Function.socketReceive (/home/ubuntu/workspace/New Folder/Impulse-PS/users.js:1690:12)
+    at Worker.worker.on.data (/home/ubuntu/workspace/New Folder/Impulse-PS/sockets.js:53:11)
+
+Additional information:
+  user = Anrin N
+  room = lobby
+  pmTarget = undefined
+  message = /profile
+

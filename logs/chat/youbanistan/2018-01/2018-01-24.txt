@@ -1,0 +1,7 @@
+03:38:13 NEW CHATROOM: youbanistan
+03:41:20 NEW CHATROOM: youbanistan
+03:42:01 NEW CHATROOM: youbanistan
+03:42:19 |raw|<div class="broadcast-red"><b>The server needs to restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
+03:52:01 |userstats|total:0|guests:0| :0|+:0|%:0|@:0|*:0|☆:0|★:0|#:0|&:0|~:0
+04:02:01 |userstats|total:0|guests:0| :0|+:0|%:0|@:0|*:0|☆:0|★:0|#:0|&:0|~:0
+04:04:38 |raw|<div class="broadcast-red"><b>The server is restarting soon.</b><br />Please finish your battles quickly. No new battles can be started until the server resets in a few minutes.</div>
