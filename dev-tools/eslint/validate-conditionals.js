@@ -1,89 +1,29 @@
-/**
- * Enforces Pokémon Showdown code style for conditionals
- *
- * Reliant on specific active settings for ESLint's rule "Require Following Curly Brace Conventions" (curly)
- * curly: [2, "multi-line", "consistent"]
- *
- * ##### Valid
- *
- * ```js
- *  if (console.log) {
- *  	console.log("Test");
- *  }
- *
- *  if (console.log) {
- *  	console.log("Test");
- *  } else {
- *  	throw new Error("Error");
- *  }
- *
- *  if (console.log) {
- *  	console.log("Test");
- *  } else {
- *  	0;
- *  }
- *
- *  if (console.log) {
- *  	console.log("Test");
- *  } else if (Number.isFinite) {
- *  	Number.isFinite(42);
- *  }
- *
- *  if (Math.random) Math.random();
- *
- *  if (a == 1) // Do something with this magic number
- * ```
- *
- * ##### Invalid
- *
- * ```js
- *  if (console.log) {
- *  	console.log("Test");
- *  } else if (Number.isFinite) Number.isFinite();
- *
- *  if (Math.random) {
- *  	Math.random();
- *  } else {Number.isFinite()};
- *
- *  if (Math.random) {
- *  	Math.random();
- *  } else if (Number.isFinite) {Number.isFinite()};
- *
- *  if (Math.random) Math.random();
- *  else {
- *  	Number.isFinite();
- *  }
- *
- *  if (Math.random) Math.random(); else Number.isFinite();
- *
- *  if (Math.random) Math.random();
- *  else Number.isFinite();
- *
- *  if (Math.random) Math.random();
- *  else if (Number.isFinite) Number.isFinite();
- *  else Number.isInteger();
- *
- *  if (Math.random)
- *  	Math.random();
- *
- * ```
- */
+"use strict";
 
-'use strict';
+describe("eslint-rules/validate-conditionals", function () {
+	const rule = require('./../../../dev-tools/eslint/validate-conditionals');
+	const RuleTester = require('eslint/lib/testers/rule-tester');
 
-module.exports = function (context) {
-	return {
-		"IfStatement": function (node) {
-			if (!node.alternate) return;
-			if (node.consequent.loc.end.line > node.consequent.loc.start.line) return;
-			if (node.consequent.loc.end.line >= node.alternate.loc.start.line - 1) {
-				context.report({
-					node: node.alternate,
-					message: "Nested conditional must span across multiple lines.",
-				});
-			}
-		},
-	};
-};
-
-module.exports.schema = [];
+	const ruleTester = new RuleTester();
+	ruleTester.run("validate-conditionals", rule, {
+		valid: [
+			'if (Math.random) {\nMath.random();\n}',
+			'if (Math.random) {\n//This is a comment\n}',
+			'if (Math.random) {\nMath.random();\n} else {\n0;\n}',
+			'if (Math.random) Math.random();',
+		],
+		invalid: [{
+			code: 'if (Math.random) Math.random(); else Number.isFinite();',
+			errors: [{message: "Nested conditional must span across multiple lines."}],
+		}, {
+			code: 'if (Math.random) Math.random();\nelse Number.isFinite();',
+			errors: [{message: "Nested conditional must span across multiple lines."}],
+		}, {
+			code: 'if (Math.random) Math.random();\nelse if (Number.isFinite) Number.isFinite();\nelse Number.isInteger();',
+			errors: [{message: "Nested conditional must span across multiple lines."}, {message: "Nested conditional must span across multiple lines."}],
+		}, {
+			code: 'if (Math.random) Math.random();\nelse if (Number.isFinite) Number.isFinite();\nelse if (Number.isInteger) Number.isInteger();\nelse Number.parseInt();',
+			errors: [{message: "Nested conditional must span across multiple lines."}, {message: "Nested conditional must span across multiple lines."}, {message: "Nested conditional must span across multiple lines."}],
+		}],
+	});
+});
